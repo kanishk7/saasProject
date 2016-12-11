@@ -16,6 +16,8 @@
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
 
 // Main Headings
 h1, h2 {
@@ -35,8 +37,8 @@ h3, p {
   background: #3a7bd5; /* fallback for old browsers */
   background: -webkit-linear-gradient(to left, #3a7bd5 , #3a6073); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to left, #3a7bd5 , #3a6073); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  border: none;
   color: white;
+  border: none;
 }
 
 // Additional CSS for the navbar-emulating callout
@@ -84,4 +86,9 @@ h3, p {
     color: white;
     opacity: 0.75;
   }
+}
+
+.icon-logo {
+  background-image: url("http://www.iconarchive.com/download/i87053/graphicloads/colorful-long-shadow/Car.ico");
+  background-position: center center; 
 }
