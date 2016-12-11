@@ -23,6 +23,7 @@ gem 'jbuilder', '2.5.0'
 # gem 'bcrypt', '3.1.7'
 
 # Use Bootstrap SASS
+# This is what allows the Rails to parse the SCSS code into CSS code
 gem 'bootstrap-sass', '3.3.7'
 
 # Use Capistrano for deployment
