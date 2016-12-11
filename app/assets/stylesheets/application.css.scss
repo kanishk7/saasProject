@@ -17,17 +17,20 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+// Main Headings
 h1, h2 {
   font-family: 'Roboto', sans-serif;    
 }
 
-p {
+// Smaller headings and text
+h3, p {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   font-size: 22px;
   color: #ddd;
 }
 
+// For the nav-bar and the callout that copies the style
 .navbar, .callout-navbar {
   background: #3a7bd5; /* fallback for old browsers */
   background: -webkit-linear-gradient(to left, #3a7bd5 , #3a6073); /* Chrome 10-25, Safari 5.1-6 */
@@ -36,12 +39,14 @@ p {
   color: white;
 }
 
+// Additional CSS for the navbar-emulating callout
 .callout-navbar {
   margin-top: -20px;
   padding-top: 50px;
   padding-bottom: 50px;
 }
 
+// For a gray color callout
 .callout-gray {
   background: #ECE9E6; /* fallback for old browsers */
   background: -webkit-linear-gradient(to left, #ECE9E6 , #FFFFFF); /* Chrome 10-25, Safari 5.1-6 */
@@ -51,6 +56,7 @@ p {
   padding-bottom: 50px;
 }
 
+// For a violet color callout
 .callout-violet {
   background: #4776E6; /* fallback for old browsers */
   background: -webkit-linear-gradient(to left, #4776E6 , #8E54E9); /* Chrome 10-25, Safari 5.1-6 */
@@ -60,6 +66,7 @@ p {
   padding-bottom: 50px;
 }
 
+// For a purple color callout
 .callout-purple {
   background: #DA22FF; /* fallback for old browsers */
   background: -webkit-linear-gradient(to left, #DA22FF , #9733EE); /* Chrome 10-25, Safari 5.1-6 */
@@ -69,21 +76,12 @@ p {
   padding-bottom: 50px;
 }
 
+// For text that makes up the navbar
+.navbar-default .navbar-brand,
 .navbar-default .navbar-nav > li > a {
   color: white;
-}
-
-.navbar-default .navbar-nav > li > a:hover {
-  color: white;
-  opacity: 0.75;
-}
-
-
-.navbar-default .navbar-brand {
-  color: white;
-}
-
-.navbar-default .navbar-brand:hover {
-  color: white;
-  opacity: 0.75;
+  &:hover { 
+    color: white;
+    opacity: 0.75;
+  }
 }
