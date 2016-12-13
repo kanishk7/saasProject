@@ -20,9 +20,16 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
+          <!-- HTML way of expressing followed by the Rails way of expressing 
           <a class="navbar-brand" href="//rails-workspace-kanishkm.c9users.io/">
-            <i class="icon-logo"> </i>
-            Colossus Labs </a>
+            <i class="fa fa-odnoklassniki"> </i>
+            Colossus Labs 
+          </a>
+          -->
+          <%= link_to "/", class: "navbar-brand" do %>
+            <i class="fa fa-odnoklassniki"> </i>
+            Colossus Labs
+          <% end %>
         </div>
     
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -31,7 +38,10 @@
             <li> <a href=""> Home </a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="https://rails-workspace-kanishkm.c9users.io/about">About Us</a></li>
+            <!-- Displaying link in the Rails way and the HTML way. 
+            HTML way is commented out.
+            <li><a href="/about">About Us</a></li> -->
+            <li> <%= link_to "About Us", "/about" %> </li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Options <span class="caret"></span></a>
               <ul class="dropdown-menu">
