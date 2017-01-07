@@ -23,12 +23,12 @@
           <!-- HTML way of expressing followed by the Rails way of expressing 
           <a class="navbar-brand" href="//rails-workspace-kanishkm.c9users.io/">
             <i class="fa fa-odnoklassniki"> </i>
-            Colossus Labs 
+            colossus Labs 
           </a>
           -->
           <%= link_to root_path, class: "navbar-brand" do %>
             <i class="fa fa-odnoklassniki"> </i>
-            Colossus Labs
+            colossus
           <% end %>
         </div>
     
@@ -57,10 +57,6 @@
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>
-    
-    <div class='container-fluid callout-navbar'>
-      <%= yield %>
-    </div>
-
   </body>
+  <%= yield %>
 </html>

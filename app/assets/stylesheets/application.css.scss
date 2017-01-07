@@ -22,14 +22,20 @@
 // Main Headings
 h1, h2 {
   font-family: 'Roboto', sans-serif;    
+  font-weight: 400;
 }
 
 // Smaller headings and text
 h3, p {
   font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
+  font-weight: 100;
   font-size: 22px;
-  color: #ddd;
+  color: #eee;
+}
+
+p.dark {
+  @extend p;
+  color: #000;
 }
 
 // For the nav-bar and the callout that copies the style
@@ -86,6 +92,27 @@ h3, p {
     color: white;
     opacity: 0.75;
   }
+}
+
+.navbar-default .navbar-toggle {
+    border-color: white;
+    &:hover, &:focus { 
+    color: #3a6073;
+    opacity: 0.75;
+  }
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: white;
+}
+
+.navbar-btn {
+  margin-left: 10px;
+}
+
+.navbar-brand {
+  font-family: 'Camphor', 'Open Sans', 'Segoe UI', sans-serif;
+  font-weight: 800;
 }
 
 .icon-logo {
